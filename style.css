@@ -2,8 +2,8 @@ body{
   margin: 0;
 }
 
-header{
-  background: #eeeeee;
+.keyVisual{
+  text-align: center;
 }
 
 .headerInner, .mainInner {
@@ -28,4 +28,25 @@ footer {
   text-align: center;
   margin-top: 50px;
   padding: 30px;
+}
+
+.priceWrapper table,
+.priceWrapper th,
+.priceWrapper td{
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.priceWrapper th,
+.priceWrapper td{
+  padding: 7px;
+}
+
+.priceWrapper table{
+  width: 100%;
+}
+
+.priceWrapper th{
+  width: 150px;
+  background: #eeeeee;
 }
