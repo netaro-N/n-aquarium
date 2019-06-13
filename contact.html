@@ -23,20 +23,20 @@
   <form action="thanks.html">
     <table>
       <tr>
-        <td><label for="name">お名前</label></td>
-        <td><input type="text" name="name" placeholder="名前を入れてください"></td>
+        <th><label for="name">お名前</label></th>
+        <td><input type="text" name="name" placeholder="名前を入れてください" id="name"></td>
       </tr>
       <tr>
-        <td>性別</td>
+        <th>性別</th>
         <td>
           <input type="radio" name="gender" id="male" value="male"><label for="male">男性</label>
           <input type="radio" name="gender" id="female" value="female"><label for="female">女性</label>
         </td>
       </tr>
       <tr>
-        <td>年齢</td>
+        <th><label for="age">年齢</label> </th>
         <td>
-          <select name="age">
+          <select name="age" id="age">
             <option value="10">10代</option>
             <option value="20">20代</option>
             <option value="30">30代</option>
@@ -47,11 +47,11 @@
       </tr>
       <tr>
         <th><label for="title">題名</label></th>
-        <td><input type="text" name="title" placeholder="タイトルを入れてください"></td>
+        <td><input type="text" name="title" placeholder="タイトルを入れてください" id="title"></td>
       </tr>
       <tr>
-        <td><label for="comment">質問内容</label></td>
-        <td><textarea name="comment" cols="30" rows="10"></textarea></td>
+        <th><label for="comment">質問内容</label></th>
+        <td><textarea name="comment" cols="30" rows="10" id="comment"></textarea></td>
       </tr>
     </table>
   </form>
@@ -60,8 +60,8 @@
       <input type="checkbox" id="check"><label for="check">個人情報の取扱に同意する</label>
     </div>
   </div>
+  <!-- なぜわざわざform外に置いているのかわからない（個人情報の取扱の下に置く||同意の値はいらない）から？ -->
   <div class="text-center">
-    <!-- なぜわざわざform外に置いているのかわからない（個人情報の取扱の下に置く||同意の値はいらない）から？ -->
     <input type="submit" value="送信する">
   </div>
   <footer>
