@@ -146,3 +146,37 @@ input[type="text"]:focus::placeholder{
   transform: translateX(30px);
   opacity: 0;
 }
+
+input[type="radio"]{
+  display: none;
+}
+
+input[type="radio"] + label{
+  padding-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+input[type="radio"] + label:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + label:after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 9px;
+  height: 9px;
+  background: #41487e;
+  border-radius: 50%;
+}
