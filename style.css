@@ -220,3 +220,53 @@ input[type="checkbox"]:checked + label:after{
   text-align: center;
   padding: 10px;
 }
+
+.selectBox{
+  color: #41487e;
+  border: solid 2px #41487e;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+}
+
+.selectBox:after{
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-25%);
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid #41487e;
+  z-index: -1;
+}
+
+select{
+  padding: 2px 5px;
+  border-radius: 0;
+  outline: none;
+  border: 0;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 16px;
+}
+
+input[type="submit"]{
+  border-style:none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  background: #41487e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+input[type="submit"]:hover{
+  background: #1f275e;
+}
