@@ -147,6 +147,7 @@ input[type="text"]:focus::placeholder{
   opacity: 0;
 }
 
+/* ラジオボタンの装飾 */
 input[type="radio"]{
   display: none;
 }
@@ -179,4 +180,43 @@ input[type="radio"]:checked + label:after{
   height: 9px;
   background: #41487e;
   border-radius: 50%;
+}
+
+/* チェックボックスの装飾 */
+input[type="checkbox"]{
+  display: none;
+}
+
+input[type="checkbox"] + label{
+  padding-left: 25px;
+  position: relative;
+}
+
+input[type="checkbox"] + label:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999;
+}
+
+input[type="checkbox"]:checked + label:after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  width: 7px;
+  height: 15px;
+  transform: rotate(45deg);
+  border-bottom: 3px solid #41487e;
+  border-right: 3px solid #41487e;
+}
+
+.text-center{
+  text-align: center;
+  padding: 10px;
 }
